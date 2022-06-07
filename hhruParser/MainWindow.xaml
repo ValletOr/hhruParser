@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:hhruParser"
         mc:Ignorable="d"
+        Title="Парсер hh.ru"
         MaxHeight="480"
         MaxWidth="720"
         MinHeight="480" 
@@ -26,7 +27,7 @@
                 <RowDefinition Height="0.15*"/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            <Label Content="Аргументы парсинга" Grid.Row="0"/>
+            <Label Content="Фильтры парсинга" Grid.Row="0"/>
             <ListBox Name="jobsListBox" Grid.Row="1" MouseDoubleClick="jobsListBox_MouseDoubleClick"/>
         </Grid>
 
@@ -39,7 +40,7 @@
             <StackPanel Grid.Column="0" VerticalAlignment="Center">
                 <Label Height="30" Content="Мин зарплата (руб.):" HorizontalAlignment="Right"/>
                 <Label Height="30" Content="Макс зарпалата (руб.):" HorizontalAlignment="Right"/>
-                <Label Height="30" Content="Возраст объявления (дней):" HorizontalAlignment="Right"/>
+                <Label Height="30" Content="Период объявления (дней):" HorizontalAlignment="Right"/>
             </StackPanel>
             <StackPanel Grid.Column="1" VerticalAlignment="Center">
                 <TextBox Name="minWageTextBox" Height="30" VerticalContentAlignment="Center"/>
