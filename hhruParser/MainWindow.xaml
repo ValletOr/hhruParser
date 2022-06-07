@@ -5,8 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:hhruParser"
         mc:Ignorable="d"
-        Height="480" 
-        Width="720">
+        MaxHeight="480"
+        MaxWidth="720"
+        MinHeight="480" 
+        MinWidth="720">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
