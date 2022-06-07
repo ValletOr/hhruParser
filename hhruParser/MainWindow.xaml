@@ -35,9 +35,9 @@
             </Grid.ColumnDefinitions>
 
             <StackPanel Grid.Column="0" VerticalAlignment="Center">
-                <Label Height="30" Content="Минимальная зарплата:"/>
-                <Label Height="30" Content="Максимальная зарпалата:"/>
-                <Label Height="30" Content="Возраст объявления:"/>
+                <Label Height="30" Content="Мин зарплата (руб.):" HorizontalAlignment="Right"/>
+                <Label Height="30" Content="Макс зарпалата (руб.):" HorizontalAlignment="Right"/>
+                <Label Height="30" Content="Возраст объявления (дней):" HorizontalAlignment="Right"/>
             </StackPanel>
             <StackPanel Grid.Column="1" VerticalAlignment="Center">
                 <TextBox Name="minWageTextBox" Height="30" VerticalContentAlignment="Center"/>

@@ -105,10 +105,10 @@ namespace hhruParser
 
             IRow headerRow = sheet.CreateRow(0);
             createCell(headerRow, 0, "Вакансия");
-            createCell(headerRow, 1, "Зарплата");
-            createCell(headerRow, 3, "Минимальная зп");
-            createCell(headerRow, 4, "Максимальная зп");
-            createCell(headerRow, 5, "Средняя зп");
+            createCell(headerRow, 1, "Зарплата (руб.)");
+            createCell(headerRow, 3, "Минимальная зп (руб)");
+            createCell(headerRow, 4, "Максимальная зп (руб)");
+            createCell(headerRow, 5, "Средняя зп (руб)");
 
             foreach(Vacancy vac in parseDataGrid.Items)
             {
@@ -118,9 +118,9 @@ namespace hhruParser
 
                 if(rowCounter == 1)
                 {
-                    createCell(currentRow, 3, minWageLabel.Content.ToString());
-                    createCell(currentRow, 4, maxWageLabel.Content.ToString());
-                    createCell(currentRow, 5, avgWageLabel.Content.ToString());
+                    createCell(currentRow, 3, minWageLabel.Content.ToString().Split(' ')[3]);
+                    createCell(currentRow, 4, maxWageLabel.Content.ToString().Split(' ')[3]);
+                    createCell(currentRow, 5, avgWageLabel.Content.ToString().Split(' ')[3]);
                 }
 
                 rowCounter++;
@@ -169,9 +169,9 @@ namespace hhruParser
                 avgWage = 0;
             }
 
-            minWageLabel.Content = "Минимальная зарплата = " + minWage;
-            maxWageLabel.Content = "Максимальная зарплата = " + maxWage;
-            avgWageLabel.Content = "Средняя зарплата = " + avgWage;
+            minWageLabel.Content = "Минимальная зарплата = " + minWage + " руб.";
+            maxWageLabel.Content = "Максимальная зарплата = " + maxWage + " руб.";
+            avgWageLabel.Content = "Средняя зарплата = " + avgWage + " руб.";
 
         }
 
