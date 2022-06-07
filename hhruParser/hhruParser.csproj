@@ -119,5 +119,8 @@
   <ItemGroup>
     <Resource Include="jobsData.txt" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="program.py" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

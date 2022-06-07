@@ -41,7 +41,7 @@ namespace hhruParser
         {
             ProcessStartInfo start = new ProcessStartInfo();
             start.FileName = @"C:\Users\Max\AppData\Local\Programs\Python\Python310\python.exe";
-            start.Arguments = @".\program.py" + " " + args;
+            start.Arguments = @"..\..\program.py" + " " + args;
             start.UseShellExecute = false;
             start.RedirectStandardOutput = false;
             Process process = Process.Start(start);
